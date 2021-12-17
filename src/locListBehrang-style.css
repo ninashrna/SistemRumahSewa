@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Orbitron&family=Saira+Condensed:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0;
+}
+body{
+    background-image: background: rgb(252, 252, 126);
+    
+    background-size: cover;
+}
+.title{
+    margin: 45px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.0em;
+    text-transform: uppercase;
+    word-spacing: 0.8px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background: white;
+    width: 300px;
+    margin: 20px 55px;
+    border-radius: 15px;
+}
+.card:hover{
+    background-color: rgb(237, 121, 13);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+.card-img{
+    height: 270px;
+    border-radius: 15px 15px 0 0;
+}
+.card h2{
+    justify-content: center;
+    padding: 10px 35px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.3em;
+    word-spacing: 1.0px;
+}
+.card h1{
+    justify-content: center;
+    padding: 10px 35px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 2.0em;
+    word-spacing: 1.0px;
+    text-align: center;
+}
+.title h1{
+    justify-content: center;
+    padding: 10px 35px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 2.0em;
+    word-spacing: 1.0px;
+    text-align: center;
+}
+.card p{
+    justify-content: center;
+    padding: 0 35px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.2em;
+}
+.behrang-1{
+    background: url("img/behrang/behrang_1_img.jpg");
+    background-size: cover;
+}
+.behrang-2{
+    background: url("img/behrang/behrang_2_img.jpg");
+    background-size: cover;
+}
+.behrang-3{
+    background: url("img/behrang/behrang_3_img.jpg");
+    background-size: cover;
+}
+
+.behrang-4{
+    background: url("img/behrang/behrang_4_img.jpg");
+    background-size: cover;
+}
+.behrang-5{
+    background: url("img/behrang/behrang_5_img.jpg");
+    background-size: cover;
+}
+.behrang-5{
+    background: url("img/behrang/behrang_5_img.jpg");
+    background-size: cover;
+}
+.behrang-6{
+    background: url("img/behrang/behrang_7_img.jpg");
+    background-size: cover;
+}
+.behrang-7{
+    background: url("img/behrang/behrang_6_img.jpg");
+    background-size: cover;
+}
+.behrang-8{
+    background: url("img/behrang/behrang_8_img.jpg");
+    background-size: cover;
+}
+.behrang-9{
+    background: url("img/behrang/behrang_9_img.jpg");
+    background-size: cover;
+}
+.behrang-10{
+    background: url("img/behrang/behrang_10_img.jpg");
+    background-size: cover;
+}
+.behrang-11{
+    background: url("img/behrang/behrang_11_img2.jpg");
+    background-size: cover;
+}
+.behrang-12{
+    background: url("img/behrang/behrang_12_img3.jpg");
+    background-size: cover;
+}
+.behrang-13{
+    background: url("img/behrang/behrang_13_img4.jpg");
+    background-size: cover;
+}
+.behrang-14{
+    background: url("img/behrang/behrang_14_img3.jpg");
+    background-size: cover;
+}
+.slim-1{
+    background: url("img/slim_river/slim_1_img.jpg");
+    background-size: cover;
+}
+.slim-2{
+    background: url("img/slim_river/slim_2_img.jpg");
+    background-size: cover;
+}
+.slim-3{
+    background: url("img/slim_river/slim_3_img.jpg");
+    background-size: cover;
+}
+.tanjong-1{
+    background: url("img/tanjong_malim/tanjong_1_img.jpg");
+    background-size: cover;
+}
+
+.tanjong-2{
+    background: url("img/tanjong_malim/tanjong_2_img.jpg");
+    background-size: cover;
+}
+
+.tanjong-3{
+    background: url("img/tanjong_malim/tanjong_3_img.jpg");
+    background-size: cover;
+}
+
+
+
+.card a{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 55px;
+    text-decoration: none;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .title h1{
+        font-size: 0.5em;
+       
+    }
+
+}
