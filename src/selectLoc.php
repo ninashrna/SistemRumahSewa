@@ -1,3 +1,7 @@
+<?php
+require 'dbconn.php';
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -16,20 +20,19 @@
     </section>
 
     <section class="container">
-        <div class="card">
-            <h1>SLIM <br>RIVER</h1>
-            <a href="locListSlimRiver.php">CLICK HERE</a>
-        </div>
+        <?php
+        $sql = "SELECT * FROM `location`";
+        $query = mysqli_query($conn, $sql);
 
-        <div class="card">
-            <h1>BEHRANG</h1>
-            <a href="locListBehrang.php">CLICK HERE</a>
-        </div>
-
-        <div class="card">
-            <h1>TANJONG <br> MALIM</h1>
-            <a href="locListTanjongMalim.php">CLICK HERE</a>
-        </div>
+        while($location = mysqli_fetch_array($query)){
+        ?>
+            <div class="card">
+                <h1><?php echo $location['locationName']; ?></h1>
+                <a href="locList.php?location_id=<?php echo $location['id']?>">CLICK HERE</a>
+            </div>
+        <?php
+        }
+        ?>
 
         
 
