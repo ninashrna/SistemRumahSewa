@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --Montserrat: 'Montserrat', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+}
+
+* {
+    font-family: var(--Montserrat);
+}
+
+nav {
+    transition: 0.6s;
+}
+
+nav.sticky {
+    background: #FFF !important;
+    padding: 0 !important;
+    margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav.sticky ul li a {
+    color: #17202A !important;
+}
+
+nav.sticky .navbar-brand img {
+    content:url("") !important;
+    transition: 0.6s;
+}
+
+nav.sticky .fa-bars {
+    color: #000;
+}
+
+.p-nav {
+    padding-top: 100px !important;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.header-text {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.howto-text,
+.reveal.contact-info {
+    transform: translateX(-100px);
+}
+
+.reveal.eattrivia-logo,
+.reveal.map {
+    transform: translateX(0px);
+}
+
+.reveal.lead {
+    transform: translateY(50px);
+}
+
+.reveal.col {
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.container {
+    z-index: 100;
+}
+
+.header {
+    padding-top: 30vh;
+}
+
+.header-text {
+    z-index: 200;
+    color: #FFF;
+}
+
+.header-text h1 {
+    font-size: 3rem !important;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+.contact-icons {
+    font-size: 3rem;
+}
+
+.contact-icons i {
+    color: #FFF;
+    padding: 0.25rem;
+}
+
+.contact-icons i.fa-whatsapp:hover {
+    color: #25D366;
+}
+
+.contact-icons i.fa-telegram:hover {
+    color: #0088CC;
+}
+
+.bg-banner {
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(img/bg-1.jpg);
+    height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.howto-text p,
+.howto-text ul li {
+    font-family: var(--Roboto);
+}
+
+.order-btn:hover {
+    background-color: blue;
+}
+
+.contact-link:hover {
+    background-color: darkgray;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.bi-arrow-up-circle:hover {
+    color: blue;
+}
+
+@media(min-width: 576px) {
+    .header-text h1 {
+        font-size: 5rem !important;
+    }
+}
+
+@media(min-width: 768px) {
+    .header-text h1 {
+        font-size: 7rem !important;
+    }
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 5px solid white;
+}
+
+.button1:hover {
+  background-color: #E74C3C ;
+  color: white;
+}
+
+.button2 {
+  background-color: #E74C3C ; 
+  color: black; 
+  border: 5px solid white;
+}
+
+.button2:hover {
+  background-color: #E74C3C ;
+  color: white;
+}
+
